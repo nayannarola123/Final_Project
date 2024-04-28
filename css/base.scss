@@ -1,0 +1,175 @@
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+// .container {
+//     width: 1140px;
+//     margin: 0 auto;
+//     padding: 0 15px;
+// }
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 15px;
+}
+:root {
+    --bs-primary-rgb:249, 241, 231;
+    --sider-width:250px;
+    --header-height:60px;
+    --yellow-opacity:rgb(245, 184,73 , .2);
+    --yellow-text:rgb(245, 184,73);
+    --primarycolor: #1a1c1e ;
+    --input-border:#313335;
+    --admin-color: rgb( 37, 39, 41);
+    --berry:rgba(35, 183, 229 ,.2);
+    --berry-text:rgb(35, 183, 229);
+    --caption-color:#8f9bb3;
+    --purple:rgb(132, 90, 223);
+    --light-blue:rgb(35, 183, 229);
+    --red-text:rgb(230, 83, 60);
+    --berry-red:rgba(230, 83, 60 , .2);
+    --green-text:rgb(38, 191, 148);
+    --green-light:rgba(38, 191, 148 , .2);
+    --header-prime:rgba(255 , 255 , 255 , .6);
+    --gray: #737373;
+    --btnbg:#f3f3f3;
+    --black: #000000;
+    --gray-black: #131313;
+    --fontcolor: #737373;
+    --movie-font:'Covered By Your Grace';
+    --main-font:'Poppins';
+    --white: #ffffff;
+    --menu-hover-color: #e9ecef;
+    --header-bt-color: #ffffff26;
+    --bs-warning-text-emphasis:rgb(237, 171, 21);
+    --text-grey:#9f9f9f;
+   
+}
+
+body {
+    font-family: var(--main-font);
+}
+.w-1{
+    width: 8.33%;
+}
+.w-2{
+    width: 16.66%;
+}
+.w-3{
+    width: 25%;
+}
+.w-4{
+    width: 33.33%;
+}
+.w-5{
+    width: 41.66%;
+}
+.w-6{
+    width: 50%;
+}
+.w-7{
+    width: 58.33%;
+}
+.w-8{
+    width: 66.66%;
+}
+.w-9{
+    width: 75%;
+}
+.w-10{
+    width: 83.33%;
+}
+.w-11{
+    width: 91.66%;
+}
+.w-12{
+    width: 100%;
+}
+.d-f{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul , ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.d-b{
+    display: block;
+}
+.m-a{
+    margin: 0 auto;
+}
+.j-c-c{
+    justify-content: center;
+}
+.j-c-s{
+    justify-content: start;
+}
+.j-c-e{
+    justify-content: end;
+}
+.j-c-b{
+    justify-content: space-between;
+}
+.t-a-c{
+    text-align: center;
+}
+.t-a-e{
+    text-align: end;
+}
+.t-e{
+    text-align: end;
+}
+.a-i-c{
+    align-items: center;
+}
+.a-i-e{
+    align-items: end;
+}
+.p-a{
+    position: absolute;
+}
+.p-r{
+    position: relative;
+}
+.r-g{
+    row-gap: 25px;
+}
+.p-c-5{
+    padding: 3rem;
+}
+.ps-6{
+    padding: 0 0 0 4rem ;
+}
+.ps-7{
+    padding: 0 0 0 5rem;
+}
+.p-10{
+    padding: 10px;
+}
+.py-6{
+    padding: 4.5rem 0 4.5rem 0;
+}
+
+.pst-rlt{
+    position: relative;
+}
+
+.pst-abs{
+    position:absolute;
+}
+
+.bp-c{
+    background-position: center;
+}
+.xxx-large{
+    font-size: xxx-large;
+}
+
+.list-circle{
+    list-style: circle;
+}

@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #B88E2F;
+    --secondery-color: #F9F1E7;
+    --description-color: #9F9F9F;
+}
+
+body {
+    font-family: 'Poppins';
+}
+
+.row-gap-40 {
+    row-gap: 40px;
+}
+
+.pb-150 {
+    padding-bottom: 150px;
+}
+
+.shop-section {
+    width: 100%;
+    height: 100px;
+    background-color: var(--secondery-color);
+}
+
+.shop-section ul li a {
+    font-size: 16px;
+}
+
+.sofa-content h3 {
+    font-size: 42px;
+}
+
+.sofa-content span {
+    font-size: 24px;
+    color: var(--description-color);
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.reting-porson span {
+    font-size: 13px;
+    color: var(--description-color);
+}
+
+.bottom-add .no-pic {
+    font-size: 16px;
+    padding: 15px 30px;
+    background: transparent;
+    border-radius: 8px;
+    border: 1px solid #9F9F9F;
+}
+
+.sofa-model ul li {
+    color: var(--description-color);
+    line-height: 2;
+}
+
+.center-content span {
+    color: var(--description-color);
+}
+
+.sofa-content p {
+    color: var(--description-color);
+}
+
+.cate-side i {
+    transform: translate(350px, -35px);
+}
+
+.blog-conts ul li {
+    color: var(--description-color);
+    line-height: 3;
+}

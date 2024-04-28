@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <div class="header">
+
+    </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <!-- fontawesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- boostrap css   -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- mediquery -->
+    <link rel="stylesheet" href="css/media.css">
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="./css/fonts.css">
+
+
+    <style>
+        .pt-100 {
+            padding-top: 100px;
+        }
+
+        .pb-100 {
+            padding-bottom: 100px;
+        }
+
+        .padding-px-15 {
+            padding: 0 15px 0 15px;
+        }
+
+        .header-content ul li a {
+            color: black;
+        }
+
+        .header-content ul li a:hover {
+            color: #B88E2F;
+        }
+
+        .footer-list ul li a {
+            color: black;
+        }
+
+        .footer-list ul li a:hover {
+            color: #B88E2F;
+        }
+
+        .header-icon ul li a {
+            color: black;
+            transition: all 0.3s ease;
+        }
+
+        .header-icon ul li a:hover {
+            background-color: #B88E2F;
+            color: #fff;
+        }
+
+        .header-icon ul li:hover {
+            background-color: #B88E2F;
+        }
+
+        .dropdown-menu {
+            --bs-dropdown-link-active-bg: transparent;
+        }
+
+        .btn-outline-warning {
+            --bs-btn-color: #b88e2f;
+            --bs-btn-border-color: #b88e2f;
+            --bs-btn-hover-color: #fff;
+            --bs-btn-hover-bg: #b88e2f;
+            --bs-btn-hover-border-color: #b88e2f;
+            --bs-btn-focus-shadow-rgb: 255, 193, 7;
+            --bs-btn-active-color: #fff;
+        }
+
+        /* card-section */
+        .products .card-img {
+            position: relative;
+        }
+
+        .products .card-img img {
+            min-width: 100%;
+            height: auto;
+        }
+
+        .products .card-img .img-hover {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(58, 58, 58, 1);
+            color: #fff;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+
+        .products .card-img .img-hover:hover {
+            opacity: 1;
+        }
+
+        .products .card-img .img-hover i {
+            font-size: 20px;
+            padding: 5px;
+        }
+
+        .scal-img {
+            overflow: hidden;
+            transform: scale(1);
+            border-radius: 15px;
+            transition: all 0.3s;
+        }
+
+        .scal-img img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 ">
+                    <div class="header d-f a-i-c j-c-b  py-4">
+                        <div class="logo m-xs-auto m-sm-auto m-md-0">
+                            <img src="images/logo.svg" alt="logo">
+                        </div>
+                        <div class="header-content p-1 col-4 d-xs-none d-sm-none  d-lg-block">
+                            <ul class="d-f j-c-b  m-0">
+                                <li>
+                                    <a href="./Home.html" class="fw-normal">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle fw-normal" href="./shop.html" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="true">
+                                        Shop
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="./shop.html">Shop</a></li>
+                                        <li><a class="dropdown-item" href="./singelproduct.html">Asgaard sofa</a></li>
+                                        <li><a class="dropdown-item" href="./comparison.html">Product comparison</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="./cart.html">card</a></li>
+                                        <li><a class="dropdown-item" href="./checkout.html">checkout</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="./blog.html" class="fw-normal">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="./contact.html" class="fw-normal">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header-icon col-3 col-md-4 d-xs-none d-sm-none d-md-block">
+                            <ul class="m-0 d-f justify-content-lg-evenly">
+                                <li style="width: 37px; height: 37px; "
+                                    class="rounded-circle border border-2 d-f a-i-c j-c-c">
+                                    <a href="#">
+                                        <i class="fa-solid fa-user"></i>
+                                    </a>
+                                </li>
+                                <li style="width: 37px; height: 37px; "
+                                    class="rounded-circle border border-2 d-f a-i-c j-c-c">
+                                    <a href="#">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </li>
+                                <li style="width: 37px; height: 37px; "
+                                    class="rounded-circle border border-2 d-f a-i-c j-c-c">
+                                    <a href="#">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </a>
+                                </li>
+                                <li style="width: 37px; height: 37px; "
+                                    class="rounded-circle border border-2 d-f a-i-c j-c-c">
+                                    <a href="#">
+                                        <i class="fa-solid fa-cart-shopping fs-6"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main -->   
+    <main>
+        <!-- Contact banner -->
+        <section>
+            <div class="col-12">
+                <div class="cart-bg overflow-hidden">
+                    <div class="cart-bg-img pst-rlt d-f a-i-c j-c-c t-a-c ">
+                        <img src="images/cart-background.png" alt="cart-bg-img">
+                        <div class="logo-content pst-abs">
+                            <img src="images/org-logo.png" alt="logo" class="w-25">
+                            <h2 class="fw-semibold t-a-c">Contact</h2>
+
+                            <ul class="d-f p-0 ps-2">
+                                <li clas>
+                                    <a href="#" class="text-dark fw-semibold">Home</a>
+                                </li>
+                                <span class="px-2"> > </span>
+                                <li>
+                                    <a href="#" class="text-dark">Contact</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section 3 -->
+        <section>
+            <div class="col-12 p-5 ">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-touch ">
+                            <div class="contact-content t-a-c">
+                                <h2 class="fw-semibold">Get In Touch With Us</h2>
+                                <p class="text-secondary col-7 m-auto col-xs-12">
+                                    For More Information About Our Product & Services. Please Feel Free To Drop Us An
+                                    Email.
+                                    Our Staff Always Be There To Help You Out. Do Not Hesitate!
+                                </p>
+                            </div>
+                            <div class="col-12  d-f j-c-b p-5 px-sm-0 text-sm-center text-md-start">
+                                <div class="col-3 col-xs-12 d-sm-none d-md-block col-md-4 col-lg-3    ">
+                                    <div class="contact-form">
+                                        <div class="location d-f ">
+                                            <i class="fa-solid fa-location-crosshairs fs-3 d-f a-i-c"></i>
+                                            <h3 class="d-f m-0 ps-4 fs-4">Location</h3>
+                                            <p class="ps-5">236 5th SE Avenue, New York NY10000, United States</p>
+                                        </div>
+                                        <div class="call d-f pt-5 ">
+                                            <i class="fa-solid fa-phone fs-3 d-f a-i-c"></i>
+                                            <h3 class="d-f m-0 ps-4 mb-2 fs-4">Phone</h3>
+                                            <p class="ps-5 m-0">Mobile: +(84) 546-6789</p>
+                                            <p class="ps-5 m-0">Hotline: +(84) 456-6789</p>
+                                        </div>
+                                        <div class="call d-f pt-5">
+                                            <i class="fa-regular fa-clock fs-3 d-f a-i-c"></i>
+                                            <h3 class="d-f m-0 ps-4 mb-2 fs-4">Working Time</h3>
+                                            <p class="ps-5 m-0">Monday-Friday: 9:00 - 22:00</p>
+                                            <p class="ps-5 m-0">Saturday-Sunday: 9:00 - 21:00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-xs-12 t-xs-center col-sm-12 col-md-6">
+                                    <div class="contact-form m-sm-auto">
+                                        <div class="input">
+                                            <label for="name" v
+                                                class="fw-semibold mb-3 col-3 col-xs-4 pt-xs-3 col-md-4">Your
+                                                Name</label>
+                                            <input type="text" placeholder="Enter your name"
+                                                class="p-3 col-10 ps-4 mb-3 border-1 border-grey">
+                                        </div>
+                                        <div class="input">
+                                            <label for="name" v class="fw-semibold mb-3">Email address</label>
+                                            <input type="text" placeholder="Abc@def.com"
+                                                class="p-3 col-10 ps-4 mb-3 border-1 border-grey">
+                                        </div>
+                                        <div class="input">
+                                            <label for="name" v class="fw-semibold mb-3 col-2">Subject</label>
+                                            <input type="text" placeholder="This is an optional"
+                                                class="p-3 col-10 ps-4 mb-3 border-1 border-grey">
+                                        </div>
+                                        <div class="input">
+                                            <label for="name" v class="fw-semibold mb-3 col-12">Message</label>
+                                            <input type="text" placeholder="Hi! i’d like to ask about"
+                                                class="p-3 col-10 ps-4 border-1 border-grey" style="height: 100px;">
+                                        </div>
+                                        <div class="form-btn pt-4 ">
+                                            <button type="button"
+                                                class="btn btn-outline-warning border border-dark rounded mt-4 d-inline-block fw-semibold  px-5 col-xs-5">Submit
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section 4 -->
+        <section>
+            <div class="support">
+                <div class="row">
+                    <div class="support-cnt bg-primary py-6 d-f a-i-c ">
+                        <div class="col-12 d-f d-xs-b">
+                            <div
+                                class="col-3 col-xs-12 d-xs-b t-xs-center text-sm-center col-sm-8 m-sm-auto col-md-6 col-lg-3 d-f ">
+                                <div class="col-3 col-xs-12 col-sm-12  d-f j-c-c pt-1">
+                                    <i class="fa-solid fa-medal xxx-large"></i>
+                                </div>
+                                <div class="col-9  col-xs-12 pt-xs-3 col-sm-12 pt-sm-3">
+                                    <h3 class="fw-semibold fs-5">High Quality</h3>
+                                    <p class="text-secondary">Crafted from top materials</p>
+                                </div>
+                            </div>
+                            <div
+                                class="col-3 col-xs-12 d-xs-b t-xs-center text-sm-center col-sm-8 m-sm-auto col-md-6 col-lg-3 d-f">
+                                <div class="col-3 col-xs-12 col-sm-12  d-f j-c-c pt-1">
+                                    <i class="fa-regular fa-circle-check xxx-large"></i>
+                                </div>
+                                <div class="col-9  col-xs-12 pt-xs-3 col-sm-12 pt-sm-3">
+                                    <h3 class="fw-semibold fs-5">Warranty Protection</h3>
+                                    <p class="text-secondary">Over 2 years</p>
+                                </div>
+                            </div>
+                            <div
+                                class="col-3 col-xs-12 d-xs-b t-xs-center text-sm-center col-sm-8 m-sm-auto col-md-6 col-lg-3 d-f pt-md-2 pt-lg-0">
+                                <div class="col-3 col-xs-12 col-sm-12  d-f j-c-c pt-1">
+                                    <i class="fa-solid fa-dolly xxx-large"></i>
+                                </div>
+                                <div class="col-9  col-xs-12 pt-xs-3 col-sm-12 pt-sm-3">
+                                    <h3 class="fw-semibold fs-5">Free Shipping</h3>
+                                    <p class="text-secondary">Order over 150 $</p>
+                                </div>
+                            </div>
+                            <div
+                                class="col-3 col-xs-12 d-xs-b t-xs-center text-sm-center col-sm-8 m-sm-auto col-md-6 col-lg-3 d-f pt-md-2 pt-lg-0">
+                                <div class="col-3 col-xs-12 col-sm-12  d-f j-c-c pt-1">
+                                    <i class="fa-solid fa-headset xxx-large"></i>
+                                </div>
+                                <div class="col-9  col-xs-12 pt-xs-3 col-sm-12 pt-sm-3">
+                                    <h3 class="fw-semibold fs-5">24 / 7 Support</h3>
+                                    <p class="text-secondary">Dedicated support</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--  footer  -->
+    <footer class="pt-100">
+        <div class="container">
+            <div class="row">
+                <div class="footer ">
+                    <div class="col-12  d-f j-c-b ">
+                        <div class="col-3 col-xs-12 t-xs-center col-sm-12 col-lg-3 text-lg-start text-sm-center">
+                            <div class="footer-content">
+                                <h2 class="fw-semibold">Furniro</h2>
+                            </div>
+                            <div class="footer-cnt-p text-secondary pt-5">
+                                <p>400 University Drive Suite 200 Coral Gables, <br> FL 33134 USA</p>
+                            </div>
+                        </div>
+                        <div class="col-2 col-xs-6   col-sm-6 col-lg-2  pt-sm-3">
+                            <div class="footer-links">
+                                <h2 class="text-secondary fs-4 mb-3">Links</h2>
+                            </div>
+                            <div class="footer-list pt-5">
+                                <ul class="p-0">
+                                    <li>
+                                        <a href="./Home.html" class="fw-semibold">
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li class="pt-5">
+                                        <a href="./shop.html" class="fw-semibold">
+                                            Shop
+                                        </a>
+                                    </li>
+                                    <li class="pt-5">
+                                        <a href="#" class="fw-semibold">
+                                            About
+                                        </a>
+                                    </li>
+                                    <li class="pt-5">
+                                        <a href="./contact.html" class="fw-semibold">
+                                            Contact
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-2 col-xs-6  t-xs-end col-sm-6 col-lg-2 text-sm-end text-lg-start pt-sm-3">
+                            <div class="footer-help">
+                                <h2 class="text-secondary fs-4 mb-3">Help</h2>
+                            </div>
+                            <div class="footer-list pt-5">
+                                <ul class="p-0">
+                                    <li>
+                                        <a href="#" class="fw-semibold">
+                                            Payment Options
+                                        </a>
+                                    </li>
+                                    <li class="pt-5">
+                                        <a href="#" class="fw-semibold">
+                                            Returns
+                                        </a>
+                                    </li>
+                                    <li class="pt-5">
+                                        <a href="#" class="fw-semibold">
+                                            Privacy Policies
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div
+                            class="col-4  col-xs-12 t-xs-center  col-sm-12 col-lg-3 col-xl-4 text-sm-center m-sm-auto m-md-0 text-lg-start">
+                            <div class="footer-newsletter">
+                                <h2 class="text-secondary fs-4 mb-3">Newsletter</h2>
+                            </div>
+                            <div
+                                class="footer-n-list pt-5 d-f text-sm-center j-xs-center justify-content-sm-center justify-content-lg-start mb-sm-3 mb-xs-3">
+                                <input type="email" placeholder="Enter your Email Address"
+                                    class="border-0 border-bottom border-dark border-2">
+                                <span>
+                                    <a href="#"
+                                        class="text-dark fw-semibold  ms-3 border-bottom border-dark border-2 ms-lg-0 ms-xl-4">
+                                        SUBSCRIBE
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div
+                        class="footer-team-lead d-f j-c-b pt-3 justify-content-sm-center justify-content-lg-between j-xs-center">
+                        <p class="fw-normal ">2024 . All rights reverved by <span class="fw-semibold">MND Team</span>.
+                        </p>
+                        <p class="fw-normal ">Host by <span class="fw-semibold">MND Team</span> and made by <span
+                                class="fw-semibold">Mit Dhanani</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- boostrap js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
